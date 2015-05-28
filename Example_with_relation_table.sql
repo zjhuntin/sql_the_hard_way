@@ -40,9 +40,11 @@ CREATE TABLE car_relation (
 
 INSERT INTO person VALUES (0, "Zach", "Huntington-Meath", "27", "4306 Emerald Forest Dr.", 27713);
 INSERT INTO person VALUES (1, "Daniel", "Newell", "26", "Southern Village", 27514);
+INSERT INTO person VALUES (2, "Anna", "Engelke", "27", "4306 Emerald Forest Dr.", 27713);
 INSERT INTO pet VALUES (0, "Max", "Shiba", "1", 1);
 INSERT INTO pet VALUES (1, "Odin", "Jack Russel", "9", 1);
 INSERT INTO car VALUES (0, "Scion XA", 2005, "Gently Used");
 INSERT INTO pet_relation VALUES (0, 0, 1);
 INSERT INTO pet_relation VALUES (1, 1, 0);
 INSERT INTO car_relation VALUES (0, 0, 0);
+INSERT INTO pet_relation VALUES (2, 2, 0);
