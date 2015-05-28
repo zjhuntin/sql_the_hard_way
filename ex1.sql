@@ -12,17 +12,16 @@ CREATE TABLE pet (
 	name TEXT,
 	age INTEGER,
 	breed TEXT,
-	dead TEXT
-);
-
-CREATE TABLE person_pet (
-	person_id INTEGER,
-	pet_id INTEGER
+	dead TEXT,
+	owner INTEGER,
+	FOREIGN KEY(owner) REFERENCES person(id)
 );
 
 CREATE TABLE car (
 	id INTEGER PRIMARY KEY,
 	model TEXT,
 	year INTEGER,
-	condition TEXT
+	condition TEXT,
+	owner INTEGER,
+	FOREIGN KEY(owner) REFERENCES person(id)
 );
