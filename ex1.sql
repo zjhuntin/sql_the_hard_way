@@ -19,3 +19,10 @@ CREATE TABLE person_pet (
 	person_id INTEGER,
 	pet_id INTEGER
 );
+
+CREATE TABLE car (
+	id INTEGER PRIMARY KEY,
+	model TEXT,
+	year INTEGER,
+	condition TEXT
+);
