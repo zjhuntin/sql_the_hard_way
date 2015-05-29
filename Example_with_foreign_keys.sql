@@ -39,8 +39,16 @@ INSERT INTO pet VALUES (2, "Magorgax", "Robot Destroyer of Worlds", 2, 2, 2);
 INSERT INTO car VALUES (0, "Scion XA", 2005, "Gently Used", 0);
 
 
-SELECT person.name FROM person, pet
-WHERE pet.owner == person.id AND pet.id == 2;
+SELECT person.first_name FROM person, pet
+WHERE pet.owner = person.id AND pet.id = 2;
 
 SELECT car.condition FROM person, car
-WHERE person.id == 0 AND car.owner == person.id;
+WHERE person.id = 0 AND car.owner = person.id;
+
+INSERT INTO car VALUES (1, "Toyota Camry", 2001, "Used", 2);
+
+SELECT * FROM car;
+
+DELETE FROM car WHERE car.owner = 0;
+
+SELECT * FROM car;
