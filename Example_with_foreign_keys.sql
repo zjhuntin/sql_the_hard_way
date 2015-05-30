@@ -1,6 +1,6 @@
-DROP TABLE person;
-DROP TABLE pet;
-DROP TABLE car;
+DROP TABLE IF EXISTS person;
+DROP TABLE IF EXISTS pet;
+DROP TABLE IF EXISTS car;
 
 CREATE TABLE person (
 	id INTEGER PRIMARY KEY,
@@ -52,3 +52,9 @@ SELECT * FROM car;
 DELETE FROM car WHERE car.owner = 0;
 
 SELECT * FROM car;
+
+ALTER TABLE person ADD COLUMN height INTEGER;
+
+ALTER TABLE person ADD COLUMN weight INTEGER;
+
+.schema person
